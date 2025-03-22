@@ -27,7 +27,7 @@ A simple Stone Paper Scissors game built using HTML, CSS, and JavaScript.
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/stone-paper-scissors.git
+   git clone https://github.com/akshay-mani-tripathi/stone-paper-scissors.git
    ```
 2. Open the `index.html` file in your browser to play the game.
 
