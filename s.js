@@ -1,5 +1,5 @@
 let first = document.querySelectorAll(".box");
-const arr = ["Stone", "Paper", "Scissor"];
+const arr = ["Stone", "Paper", "Scissors"];
 let stopp = document.querySelector("#stop");
 let second = document.querySelector("#start");
 let pa = document.querySelector("#pa");
