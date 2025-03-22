@@ -17,16 +17,30 @@ stopp.addEventListener("click", () => {
     tr = false;
 });
 
+
 first.forEach((box) => {
     box.addEventListener("click", () => {
         if (!tr) return;
+
         let nu = Math.floor(Math.random() * 3);
-        if (box.innerText === arr[nu]) {
+        let computerchoice = arr[nu];
+        let userchoice = box.innerText;
+
+        if (userchoice === computerchoice) {
+            pa.innerText = "Tie!";
+            console.log("It's a Tie!");
+        } else if (
+            (userchoice === "Stone" && computerchoice === "Scissors") ||
+            (userchoice === "Scissors" && computerchoice === "Paper") ||
+            (userchoice === "Paper" && computerchoice === "Stone")
+        ) {
             pa.innerText = "You Won!";
             console.log("You Won!");
         } else {
-            pa.innerText = "Try again, Answer was " + arr[nu];
-            console.log("You Lose! Answer was", arr[nu]);
+            pa.innerText = "Try again, Answer was " + computerchoice;
+            console.log("You Lose! Answer was", computerchoice);
         }
     });
 });
+
+
